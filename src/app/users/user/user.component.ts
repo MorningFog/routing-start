@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-user',
@@ -9,8 +8,6 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class UserComponent implements OnInit {
   user: { id: number, name: string };
-
-  paramSubscription: Subscription;
 
   constructor(private route: ActivatedRoute) { }
 
